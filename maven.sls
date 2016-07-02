@@ -14,3 +14,5 @@ maven:
     - update_minion: True
   cmd.run:
     - name: setx /M JAVA_HOME "c:\Program Files\Java\jdk1.8.0_91"
+  cmd.run:
+    - name: setx /M PATH "%PATH%;%JAVA_HOME\bin"
