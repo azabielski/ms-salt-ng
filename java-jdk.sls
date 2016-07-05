@@ -1,5 +1,5 @@
 jre8:
-  '1.8u91':
+  '8.0.910.15':
     {% if grains['cpuarch'] == 'AMD64' %}
     full_name: 'Java SE Development Kit 8 Update 91 (64-bit)'
     installer: 'salt://win/winfiles/java/jdk-8u91-windows-x64.exe'
