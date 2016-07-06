@@ -9,7 +9,7 @@ jre8:
     installer: 'salt://win/winfiles/java/jdk-8u91-windows-i586.exe'
     uninstall_flags: '/qn /x {26A24AE4-039D-4CA4-87B4-2F86418091F0} /norestart'
     {% endif %}
-    install_flags: '/s REBOOT=Suppress SPONSORS=0'
+    install_flags: '/s REBOOT=Suppress SPONSORS=0 ADDLOCAL="ToolsFeature,SourceFeature"'
     uninstaller: 'msiexec'
     msiexec: False
     locale: en_US
